@@ -1,0 +1,26 @@
+.sub-card {
+  &__icon {
+    height: 70px;
+    width: 70px;
+    margin: 0 auto 25px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    background-color: $btnColor;
+    border-radius: 10px;
+    cursor: pointer;
+
+    @include hoverEffect(transform, translateY(-10%));
+  }
+
+  &__title {
+    font-weight: 400;
+    color: $paragraph;
+    text-align: center;
+    cursor: pointer;
+
+    @include hoverEffect(color, $dark);
+  }
+}

@@ -1,13 +1,547 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="page">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Title</title>
+    <title>Scribd</title>
     <link rel="stylesheet" href="./styles/main.scss">
+    <link rel="icon" href="images/favicon.png">
   </head>
-  <body>
-    <h1>Hello Mate Academy</h1>
+  <body class="page__body">
+    <header class="page__header header">
+      <div class="header__container container">
+        <div class="header__wrp">
+          <div class="header__top-action top-action">
+            <a href="#">
+              <img
+                src="./images/logo.svg"
+                alt="scribd logo"
+                class="top-action__logo"
+              >
+            </a>
+
+            <div class="top-action__group">
+              <nav class="top-action__nav nav">
+                <ul class="nav__list">
+                  <li class="nav__item">
+                    <a href="#catalog" class="nav__link">Catalog</a>
+                  </li>
+                  <li class="nav__item">
+                    <a href="#about" class="nav__link">About</a>
+                  </li>
+                  <li class="nav__item">
+                    <a href="#blog" class="nav__link">Blog</a>
+                  </li>
+                  <li class="nav__item">
+                    <a href="#support" class="nav__link">Support</a>
+                  </li>
+                </ul>
+              </nav>
+
+              <div class="top-action__icon">
+                <a href="#menu" class="icon icon--menu"></a>
+              </div>
+
+              <a href="/">
+                <button class="top-action__btn button">Sing in</button>
+              </a>
+            </div>
+          </div>
+
+          <div class="header__content">
+            <div class="header__description">
+              <h1 class="header__title">
+                Here You Can
+                <br>
+                Find Your
+                <br>
+                Favourite
+                <br>
+                Book
+              </h1>
+
+              <p class="header__text">
+                Explore audiobooks, ebooks, magazines, podcasts, and more.
+              </p>
+
+              <a href="/">
+                <button class="header__btn button">Try It For Free</button>
+              </a>
+
+              <p class="header__price">
+                Only $8.99/month after. Cancel anytime.
+              </p>
+            </div>
+
+            <div class="header__img-wrp">
+              <img
+                class="header__img"
+                alt="book"
+                src="./images/header.jpg"
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <nav class="page__menu menu" id="menu">
+      <div class="menu__container container">
+        <div class="menu__top-action top-action">
+          <div class="top-action__wrp">
+            <a href="/">
+              <img
+                src="./images/logo.svg"
+                alt="logo"
+                class="top-action__logo"
+              >
+            </a>
+            <div class="top-action__group">
+              <div class="top-action__icon">
+                <a href="/" class="icon icon--cross"></a>
+              </div>
+
+              <a href="/">
+                <button class="top-action__btn button">Sing in</button>
+              </a>
+            </div>
+          </div>
+
+          <a href="#">
+            <button class="top-action__btn--mobile button">Sing in</button>
+          </a>
+        </div>
+
+        <nav class="menu__nav nav">
+          <ul class="nav__list nav__list--tablet">
+            <li class="nav__item nav__item--tablet">
+              <a href="#catalog" class="nav__link">Catalog</a>
+            </li>
+            <li class="nav__item nav__item--tablet">
+              <a href="#about" class="nav__link">About</a>
+            </li>
+            <li class="nav__item nav__item--tablet">
+              <a href="#blog" class="nav__link">Blog</a>
+            </li>
+            <li class="nav__item nav__item--tablet">
+              <a href="#support" class="nav__link">Support</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </nav>
+
+    <main class="page__main">
+      <section class="page__section about" id="about">
+        <div class="about__section-wrp">
+          <div class="about__container container">
+            <div class="about__section">
+              <div class="about__img-wrp">
+                <img
+                  src="./images/about-1.jpg"
+                  alt="speaker"
+                  class="about__img about__img--first"
+                >
+              </div>
+
+              <div class="about__info">
+                <h2 class="about__title">
+                  What is Scribd
+                </h2>
+
+                <p class="about__text">
+                  Scribd gives you instant access to ebooks, audiobooks, articles,
+                  podcasts, sheet music, and documents — all in one simple digital
+                  subscription.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="about__section-wrp about__section-wrp--second">
+          <div class="about__container container">
+            <div class="about__section about__section--second">
+              <h2 class="about__title about__title--second">
+                All in one simple subscription
+              </h2>
+
+              <div class="about__sub-cards">
+                <div class="about__sub-card sub-card">
+                  <div class="sub-card__icon">
+                    <img src="./images/icons/books.svg" alt="book">
+                  </div>
+                  <h4 class="sub-card__title">
+                    Books
+                  </h4>
+                </div>
+
+                <div class="about__sub-card sub-card">
+                  <div class="sub-card__icon">
+                    <img src="./images/icons/audiobooks.svg" alt="book">
+                  </div>
+                  <h4 class="sub-card__title">
+                    Audiobooks
+                  </h4>
+                </div>
+
+                <div class="about__sub-card sub-card">
+                  <div class="sub-card__icon">
+                    <img src="./images/icons/magazines.svg" alt="book">
+                  </div>
+                  <h4 class="sub-card__title">
+                    Magazines
+                  </h4>
+                </div>
+
+                <div class="about__sub-card sub-card">
+                  <div class="sub-card__icon">
+                    <img src="./images/icons/podcasts.svg" alt="book">
+                  </div>
+                  <h4 class="sub-card__title">
+                    Podcasts
+                  </h4>
+                </div>
+
+                <div class="about__sub-card sub-card">
+                  <div class="sub-card__icon">
+                    <img src="./images/icons/music.svg" alt="book">
+                  </div>
+                  <h4 class="sub-card__title">
+                    Sheet music
+                  </h4>
+                </div>
+
+                <div class="about__sub-card sub-card">
+                  <div class="sub-card__icon">
+                    <img src="./images/icons/documents.svg" alt="book">
+                  </div>
+                  <h4 class="sub-card__title">
+                    Documents
+                  </h4>
+                </div>
+              </div>
+
+              <a href="#">
+                <button class="about__btn button">Try It For Free</button>
+              </a>
+
+              <p class="about__price">
+                Only $8.99/month after. Cancel anytime.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="about__section-wrp about__container container">
+          <div class="about__section">
+            <div class="about__img-wrp">
+              <img
+                src="./images/about-2.jpg"
+                alt="speaker"
+                class="about__img about__img--third"
+              >
+            </div>
+
+            <div class="about__info about__info--third">
+              <h2 class="about__title">
+                Free with your Scribd subscription
+              </h2>
+
+              <p class="about__text about__text--third">
+                Enjoy music, movies, comics, kids books, and more at no extra cost.
+                As a Scribd subscriber, you get full premium-level access to services
+                for free from our partner companies.
+              </p>
+
+              <a class="about__link-perks" href="#about">
+                See all Perks
+                <span class="about__link-arrow">&#10140;</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="about__section-wrp about__container container">
+          <div class="about__section">
+            <div class="about__info about__info--fourth">
+              <h2 class="about__title about__title--fourth">
+                Read Everywhere
+              </h2>
+
+              <p class="about__text about__text--fourth">
+                Use Scribd through any web browser, Android, or iOS device.
+                Download into the apps for offline access, so whether you're
+                reading on the beach or on the airplane, you'll always have
+                access. Our apps allow you to preview the service, even without
+                a subscription.
+              </p>
+
+              <div class="about__store-links">
+                <a class="about__store-link" href="#about">
+                  <img
+                    class="about__store-img"
+                    src="./images/app-store.png"
+                    alt="app-store"
+                  >
+                </a>
+
+                <a class="about__store-link" href="#about">
+                  <img
+                    class="about__store-img"
+                    src="./images/google-play.png"
+                    alt="google-play"
+                  >
+                </a>
+              </div>
+            </div>
+
+            <div class="about__img-wrp">
+              <img
+                src="./images/about-3.jpg"
+                alt="speaker"
+                class="about__img about__img--fourth"
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="page__section catalog" id="catalog">
+        <h2 class="catalog__title">
+          Bestsellers Are Waiting For You
+        </h2>
+
+        <div class="catalog__container">
+          <div class="catalog__container--img catalog__container--img-1">
+            <img src="./images/catalog-7.jpg" alt="catalog movie">
+          </div>
+          <div class="catalog__container--img">
+            <img src="./images/catalog-1.jpg" alt="catalog movie">
+          </div>
+          <div class="catalog__container--img">
+            <img src="./images/catalog-2.jpg" alt="catalog movie">
+          </div>
+          <div class="catalog__container--img">
+            <img src="./images/catalog-3.jpg" alt="catalog movie">
+          </div>
+          <div class="catalog__container--img">
+            <img src="./images/catalog-4.jpg" alt="catalog movie">
+          </div>
+          <div class="catalog__container--img catalog__container--img-7">
+            <img src="./images/catalog-6.jpg" alt="catalog movie">
+          </div>
+        </div>
+
+        <a href="/">
+          <button class="catalog__btn button">Try It For Free</button>
+        </a>
+
+        <p class="catalog__price">
+          Only $8.99/month after. Cancel anytime.
+        </p>
+        </div>
+      </section>
+
+      <section class="page__section blog" id="blog">
+        <div class="blog__container container">
+          <div class="blog__wrp">
+            <div class="blog__info">
+              <h2 class="blog__title">
+                From Our Founder
+              </h2>
+
+              <h3 class="blog__subtitle">
+                Trip Adler, Founder & CEO
+              </h3>
+
+              <p class="blog__text">
+                We launched as a simple way to publish any kind of written
+                content on the web. Now, Scribd is keeping reading alive in
+                the 21st century.
+              </p>
+            </div>
+
+            <div class="blog__player-wrp">
+              <iframe
+                class="blog__player"
+                src="https://www.youtube.com/embed/mkdvv2bRzhg"
+                title="YouTube video"
+                allowfullscreen
+              >
+              </iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="page__section sing-up">
+        <div class="sing-up__container container">
+          <div class="sing-up__wrp">
+            <h2 class="sing-up__title">
+              Sign Up
+            </h2>
+
+            <h3 class="sing-up__subtitle">
+              and Try Free Subscribe
+            </h3>
+
+            <form class="sing-up__form form" action="#">
+              <label class="form__label" for="input-name">
+                Name
+              </label>
+              <input
+                class="form__input"
+                type="text"
+                name="name"
+                placeholder="Michael Jordan"
+                id="input-name"
+                required
+                pattern="[A-Za-z]{2,}"
+              >
+
+              <label class="form__label" for="input-email">
+                Email
+              </label>
+              <input
+                class="form__input"
+                id="input-email"
+                type="email"
+                name="email"
+                placeholder="example123@gmail.com"
+                required
+              >
+
+              <label class="form__label" for="input-password">
+                Password
+              </label>
+              <input
+                class="form__input"
+                type="password"
+                name="password"
+                id="input-password"
+                placeholder="***********"
+                required
+                pattern="/^[a-z0-9_-]{6,18}$/"
+              >
+
+              <label class="form__label checkbox">
+                Send me updates from Scribd
+                <input
+                  class="checkbox__input"
+                  type="checkbox"
+                  name="updates checkbox"
+                  checked
+                >
+                <span class="checkbox__checkmark"></span>
+              </label>
+
+              <button type="submit" class="form__btn button">
+                Try It For Free
+              </button>
+
+              <button class="form__google-btn">
+                <span class="form__google-icon-wrp">
+                  <img
+                    class="form__google-icon"
+                    src="./images/google-icon.png"
+                    alt="google-icon"
+                  >
+                </span>
+                Sign In with Google
+              </button>
+
+              <p class="form__sing-in">
+                Already have an account?
+                <a class="form__sing-in-link" href="/">Sign In</a>
+              </p>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="page__footer footer" id="footer">
+      <div class="footer__container container">
+        <div class="footer__wrp">
+          <div class="footer__pair-wrp">
+            <div class="footer__language">
+              <h4 class="footer__subtitle">Language</h4>
+
+              <div class="footer__language-select">
+                <div class="select">
+                  <div class="select__header">
+                    <span class="select__current">English</span>
+                    <div class="select__icon">
+                      <img src="./images/icons/arrow.svg" alt="arrow">
+                    </div>
+                  </div>
+
+                  <div class="select__body">
+                    <div class="select__item">English</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="footer__legal">
+              <h4 class="footer__subtitle">Legal</h4>
+              <ul class="footer__legal-list">
+                <li class="footer__legal-item">Terms</li>
+                <li class="footer__legal-item">Privacy</li>
+                <li class="footer__legal-item">Copyright</li>
+                <li class="footer__legal-item">Cookie Preferences</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="footer__pair-wrp">
+            <div class="footer__social">
+              <h4 class="footer__subtitle">Social</h4>
+              <a href="#footer" class="footer__social-group">
+                <img src="./images/icons/instagram.svg" alt="instagram icom">
+                <span class="footer__social-group-title">Instagram</span>
+              </a>
+
+              <a href="#footer" class="footer__social-group">
+                <img src="./images/icons/facebook.svg" alt="facebook icon">
+                <span class="footer__social-group-title">Facebook</span>
+              </a>
+
+              <a href="#footer" class="footer__social-group">
+                <img src="./images/icons/twitter.svg" alt="twitter icon">
+                <span class="footer__social-group-title">Twitter</span>
+              </a>
+
+              <a href="#footer" class="footer__social-group">
+                <img src="./images/icons/pinterest.svg" alt="pinterest icon">
+                <span class="footer__social-group-title">Pinterest</span>
+              </a>
+            </div>
+            <div class="footer__free-up">
+              <h4 class="footer__subtitle">Free app</h4>
+
+              <a class="footer__free-up-link" href="#footer">
+                <img
+                  class="footer__free-up-img"
+                  src="./images/app-store.png"
+                  alt="app-store"
+                >
+              </a>
+
+              <a class="footer__free-up-link" href="#footer">
+                <img
+                  class="footer__free-up-img"
+                  src="./images/google-play.png"
+                  alt="google-play"
+                >
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
     <script type="text/javascript" src="scripts/main.js"></script>
   </body>
 </html>

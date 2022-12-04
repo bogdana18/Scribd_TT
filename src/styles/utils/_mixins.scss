@@ -1,6 +1,41 @@
-@mixin hover($_property, $_toValue) {
+@mixin onTablet {
+  @media (max-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin onMobile {
+  @media (max-width: 576px) {
+    @content;
+  }
+}
+
+@mixin hoverEffect($_property, $_toValue) {
   transition: #{$_property} 0.3s;
   &:hover {
     #{$_property}: $_toValue;
+  }
+}
+
+@mixin hoverEffect2($_property, $_toValue, $_property-2, $_toValue-2) {
+  transition: #{$_property} 0.3s, #{$_property-2} 0.3s;
+  &:hover {
+    #{$_property}: $_toValue;
+    #{$_property-2}: $_toValue-2;
+  }
+}
+
+@mixin activeEf($_property, $_toValue) {
+  transition: #{$_property} 0.2s;
+  &:active {
+    #{$_property}: $_toValue;
+  }
+}
+
+@mixin activeEf2($_property, $_toValue, $_property-2, $_toValue-2) {
+  transition: #{$_property} 0.2s, #{$_property-2} 0.2s;
+  &:active {
+    #{$_property}: $_toValue;
+    #{$_property-2}: $_toValue-2;
   }
 }

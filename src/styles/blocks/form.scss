@@ -1,0 +1,86 @@
+.form {
+  width: 100%;
+  min-width: fit-content;
+
+  &__input {
+    width: 100%;
+    margin-bottom: 30px;
+    padding: 20px;
+    color: $paragraph;
+    font-family: "Mitr", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    border-radius: 10px;
+
+    &::placeholder {
+      color: $priceAndPlaceholders;
+      font-family: "Mitr", sans-serif;
+      font-weight: 400;
+      font-size: 20px;
+    }
+  }
+
+  &__label {
+    align-self: start;
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: $paragraph;
+  }
+
+
+  &__btn {
+    width: 100%;
+    min-width: fit-content;
+    margin-bottom: 30px;
+  }
+
+  &__google-btn {
+    height: 70px;
+    width: 100%;
+    min-width: fit-content;
+    margin-bottom: 30px;
+
+    font-family: "Mitr", sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    color: $paragraph;
+    background-color: $mainBck;
+    border: 2px solid $mainBck;
+    border-radius: 10px;
+    cursor: pointer;
+
+    @include onMobile {
+      font-size: 18px;
+    }
+
+    @include activeEf(box-shadow, 0 0 5px $btnColor);
+    @include hoverEffect(border-color, $btnColor);
+  }
+
+  &__google-icon-wrp {
+    position: relative;
+    margin-left: 10px;
+  }
+
+  &__google-icon {
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(-50%, -50%);
+
+    @include onMobile {
+      width: 18px;
+      transform: translate(-10%, -50%);
+    }
+  }
+
+  &__sing-in {
+    text-align: center;
+    color: $paragraph;
+  }
+
+  &__sing-in-link {
+    color: $btnColor;
+    white-space: nowrap;
+  }
+}
