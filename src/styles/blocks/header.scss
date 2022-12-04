@@ -20,7 +20,6 @@
 
   &__content {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     flex-wrap: nowrap;
@@ -34,7 +33,6 @@
   &__description {
     display: flex;
     flex-direction: column;
-    align-items: center;
     margin-top: 30px;
     align-items: start;
     flex-basis: 460px;

@@ -31,13 +31,6 @@
     content: "";
     position: absolute;
     display: none;
-  }
-
-  &__input:checked ~ .checkbox__checkmark:after {
-    display: block;
-  }
-
-  &__checkmark:after {
     left: 6px;
     top: 3px;
     width: 5px;
@@ -45,5 +38,9 @@
     border: solid white;
     border-width: 0 3px 3px 0;
     transform: rotate(45deg);
+  }
+
+  &__input:checked ~ .checkbox__checkmark:after {
+    display: block;
   }
 }
